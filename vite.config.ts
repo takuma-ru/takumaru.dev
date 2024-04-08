@@ -10,5 +10,21 @@ export default defineConfig({
 		port: 2222,
 	},
 
-	plugins: [remixCloudflareDevProxy(), remix(), tsconfigPaths()],
+	css: {
+		preprocessorOptions: {
+			scss: {},
+		},
+	},
+
+	ssr: {
+		external: ["app/**/*.scss.d.ts"],
+	},
+
+	plugins: [
+		remixCloudflareDevProxy(),
+		remix({
+			ssr: true,
+		}),
+		tsconfigPaths(),
+	],
 });
