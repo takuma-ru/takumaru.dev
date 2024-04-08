@@ -3,7 +3,18 @@
 	"organizeImports": {
 		"enabled": true
 	},
+	"formatter": {
+		"enabled": true,
+		"ignore": [
+			"node_modules/*",
+			"build/*",
+			"app/entry.client.tsx",
+			"app/entry.server.tsx",
+			".wrangler/*"
+		]
+	},
 	"linter": {
+		"enabled": true,
 		"ignore": [
 			"node_modules/*",
 			"build/*",
@@ -11,7 +22,6 @@
 			"app/entry.server.tsx",
 			".wrangler/*"
 		],
-		"enabled": true,
 		"rules": {
 			"recommended": true
 		}
