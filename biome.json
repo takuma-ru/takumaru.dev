@@ -1,0 +1,19 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.6.4/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"ignore": [
+			"node_modules/*",
+			"build/*",
+			"app/entry.client.tsx",
+			"app/entry.server.tsx",
+			".wrangler/*"
+		],
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		}
+	}
+}
