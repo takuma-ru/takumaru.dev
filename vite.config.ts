@@ -12,7 +12,11 @@ export default defineConfig({
 
 	css: {
 		preprocessorOptions: {
-			scss: {},
+			scss: {
+				additionalData: `
+					@import "./app/assets/styles/global.scss";
+				`,
+			},
 		},
 	},
 

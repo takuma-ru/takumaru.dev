@@ -1,0 +1,34 @@
+@font-face {
+  font-family: Chillax;
+  font-style: normal;
+  font-weight: 200 700;
+  src: url("/fonts/Chillax/Chillax-Variable.woff2") format("woff2"),
+    url("/fonts/Chillax/Chillax-Variable.woff") format("woff"),
+    url("/fonts/Chillax/Chillax-Variable.ttf") format("truetype"),
+    url("/fonts/Chillax/Chillax-Variable.eot") format("eot");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi;
+  font-style: normal;
+  font-weight: 300 900;
+  src: url("/fonts/Satoshi/Satoshi-Variable.woff2") format("woff2"),
+    url("/fonts/Satoshi/Satoshi-Variable.woff") format("woff"),
+    url("/fonts/Satoshi/Satoshi-Variable.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi;
+  font-style: italic;
+  font-weight: 300 900;
+  src: url("/fonts/Satoshi/Satoshi-VariableItalic.woff2") format("woff2"),
+    url("/fonts/Satoshi/Satoshi-VariableItalic.woff") format("woff"),
+    url("/fonts/Satoshi/Satoshi-VariableItalic.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  font-family: Satoshi, Roboto, sans-serif;
+}
