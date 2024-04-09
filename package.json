@@ -18,7 +18,10 @@
 		"typecheck": "tsc",
 		"typegen": "wrangler types",
 		"preview": "npm run build && wrangler pages dev ./build/client",
-		"build-cf-types": "wrangler types"
+		"build-cf-types": "wrangler types",
+		"gen:component": "plop component --plopfile .plop/component/index.mjs",
+		"gen:hook": "plop --plopfile .plop/hook/index.mjs",
+		"gen:constant": "plop --plopfile .plop/constant/index.mjs"
 	},
 	"dependencies": {
 		"@remix-run/cloudflare": "^2.8.1",
@@ -38,6 +41,7 @@
 		"@types/react-dom": "^18.2.7",
 		"concurrently": "^8.2.2",
 		"node-fetch": "^3.3.2",
+		"plop": "^4.0.1",
 		"sass": "^1.74.1",
 		"stylelint": "^16.3.1",
 		"stylelint-config-recess-order": "^5.0.0",

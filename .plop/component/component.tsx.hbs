@@ -1,0 +1,15 @@
+import type { FC } from "react";
+
+import styles from "./{{pascalCase name}}.module.scss";
+
+type Props = {
+  /** Prop type **/
+};
+
+export const {{pascalCase name}}: FC<Props> = ({}) => {
+  return (
+    <div className={styles["{{ kebabCase name }}-component"]}>
+      {/** Your component code here */}
+    </div>
+  );
+};
