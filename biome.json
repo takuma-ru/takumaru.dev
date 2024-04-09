@@ -23,7 +23,11 @@
 			".wrangler/*"
 		],
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"complexity": {
+				"noUselessTypeConstraint": "error",
+				"useArrowFunction": "warn"
+			}
 		}
 	}
 }
