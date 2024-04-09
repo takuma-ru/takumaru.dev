@@ -1,6 +1,6 @@
+import asg from "@takuma-ru/auto-story-generator";
 import { defineConfig, loadEnv } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
-import asg from "@takuma-ru/auto-story-generator";
 
 export default defineConfig(({ mode }) => {
 	const env = loadEnv(mode, process.cwd(), "");
@@ -8,6 +8,14 @@ export default defineConfig(({ mode }) => {
 
 	return {
 		// no Remix Vite plugin here
+		css: {
+			preprocessorOptions: {
+				scss: {
+					additionalData: `@import "../app/assets/styles/global.scss";`,
+				},
+			},
+		},
+
 		plugins: [
 			tsconfigPaths(),
 			asg.vite({
