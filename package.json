@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "remix vite:build",
-		"deploy": "npm run build && wrangler pages deploy ./build/client",
+		"deploy:pages": "npm run build && wrangler pages deploy ./build/client",
 		"dev": "concurrently \"pnpm dev:remix\" \"pnpm dev:tsm\"",
 		"dev:remix": "remix vite:dev",
 		"dev:tsm": "typed-scss-modules app --watch",

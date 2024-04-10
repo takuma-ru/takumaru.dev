@@ -9,6 +9,7 @@ import { startTransition, StrictMode } from "react";
 import { hydrateRoot } from "react-dom/client";
 
 import "destyle.css"; // Must first
+import "./assets/styles/global.scss";
 
 startTransition(() => {
   hydrateRoot(

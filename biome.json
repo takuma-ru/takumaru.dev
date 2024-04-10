@@ -26,7 +26,8 @@
 			"recommended": true,
 			"complexity": {
 				"noUselessTypeConstraint": "error",
-				"useArrowFunction": "warn"
+				"useArrowFunction": "warn",
+				"useLiteralKeys": "warn"
 			}
 		}
 	}

@@ -2,14 +2,12 @@ import type { FC } from "react";
 
 import styles from "./Header.module.scss";
 
-type Props = {
-  /** Prop type **/
-};
+type Props = {};
 
 export const Header: FC<Props> = ({}) => {
   return (
-    <div className={styles["header-component"]}>
-      {/** Your component code here */}
-    </div>
+    <header className={styles["header-component"]}>
+      <h1 className={styles["header-title"]}>Header</h1>
+    </header>
   );
 };

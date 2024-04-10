@@ -8,5 +8,5 @@ node_modules
 
 .dev.vars
 
-*.module.scss.d.ts
+*.scss.d.ts
 *storybook.log
