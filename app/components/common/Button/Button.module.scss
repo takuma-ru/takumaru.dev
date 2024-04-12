@@ -1,0 +1,19 @@
+@use "app/assets/styles/variables.scss" as var;
+@use "app/assets/styles/mixins.scss" as mixin;
+
+.button-component {
+  padding: 12px 32px;
+  font-size: 16px;
+  background-color: rgba(var.$text-primary, 0.1);
+  border: 2px solid var.$text-primary;
+  border-radius: 99px;
+
+  &.-chillax {
+    font-family: Chillax, sans-serif;
+    font-weight: 500;
+  }
+
+  &.-satoshi {
+    font-family: Satoshi, sans-serif;
+  }
+}

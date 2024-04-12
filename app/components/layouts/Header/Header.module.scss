@@ -1,3 +1,6 @@
+@use "app/assets/styles/variables.scss" as var;
+@use "app/assets/styles/mixins.scss" as mixin;
+
 .header-component {
   height: 80px;
   color: var.$text-primary;

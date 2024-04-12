@@ -3,10 +3,10 @@ import { IndexContainer } from "~/components/routes/_index/IndexContainer";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
+    { title: "takumaru.dev" },
     {
       name: "description",
-      content: "Welcome to Remix! Using Vite and Cloudflare!",
+      content: "takumaru.dev - takumaru's personal website.",
     },
   ];
 };
