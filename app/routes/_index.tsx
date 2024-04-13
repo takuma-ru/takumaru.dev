@@ -11,6 +11,10 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Index() {
+export { loader } from "~/loaders/_index";
+
+const Index = () => {
   return <IndexContainer />;
-}
+};
+
+export default Index;

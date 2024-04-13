@@ -34,3 +34,7 @@ export const Primary: Story = {
 export const LinkButton: Story = {
   args: { children: "Button", link: { to: "https://takumaru.dev" } },
 };
+
+export const NavLinkButton: Story = {
+  args: { children: "Button", link: { to: { pathname: "/about" } } },
+};
