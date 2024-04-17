@@ -12,8 +12,8 @@ export default (
         choices: [
           { name: "component/common", value: "common" },
           { name: "component/layouts", value: "layouts" },
-          { name: "top page components", value: "routes/top" },
-          { name: "confirm page components", value: "routes/confirm" },
+          { name: "index page components", value: "routes/_index" },
+          { name: "about page components", value: "routes/about" },
           { name: "message page components", value: "routes/message" },
         ],
       },

@@ -52,7 +52,7 @@
 		"@storybook/react-vite": "^8.0.6",
 		"@storybook/test": "^8.0.6",
 		"@storybook/theming": "^8.0.8",
-		"@takuma-ru/auto-story-generator": "^0.3.2",
+		"@takuma-ru/auto-story-generator": "^0.3.3",
 		"@types/react": "^18.2.20",
 		"@types/react-dom": "^18.2.7",
 		"concurrently": "^8.2.2",

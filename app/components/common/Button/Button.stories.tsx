@@ -9,18 +9,6 @@ const meta: Meta<typeof Button> = {
   args: { fontFamily: undefined, link: undefined, children: undefined },
   argTypes: {
     fontFamily: { control: "select", options: ["chillax", "satoshi"] },
-    children: {
-      control: "select",
-      options: [
-        "string",
-        "number",
-        "false",
-        "true",
-        "React.ReactElement<any, string | React.JSXElementConstructor<any>>",
-        "Iterable<React.ReactNode>",
-        "React.ReactPortal",
-      ],
-    },
   },
 };
 

@@ -80,8 +80,8 @@ devDependencies:
     specifier: ^8.0.8
     version: 8.0.8(react-dom@18.2.0)(react@18.2.0)
   '@takuma-ru/auto-story-generator':
-    specifier: ^0.3.2
-    version: 0.3.2
+    specifier: ^0.3.3
+    version: 0.3.3
   '@types/react':
     specifier: ^18.2.20
     version: 18.2.74
@@ -3732,8 +3732,8 @@ packages:
       file-system-cache: 2.3.0
     dev: true
 
-  /@takuma-ru/auto-story-generator@0.3.2:
-    resolution: {integrity: sha512-ZUvgvLLgFNyOHiJwOMPpBhHZ9ubsFoIJzb4Z6VMNuKCv9ij6t53ysDNqQEOYJQkCwW/hFD2VZO8hC9f7rTxN6g==}
+  /@takuma-ru/auto-story-generator@0.3.3:
+    resolution: {integrity: sha512-7TmpxnJJuqb7bNOxLDsBcq7ly+9Thd/+SEnoEeM0GIojcSK5VCV13z9L1MGCNHUcUvKZS+uPeI7I1XYQZKfd4w==}
     dependencies:
       consola: 3.2.3
       glob: 10.3.12

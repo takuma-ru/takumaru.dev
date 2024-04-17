@@ -42,7 +42,7 @@
   position: relative;
   height: 100dvh;
   min-height: 100dvh;
-  background: linear-gradient(120deg, #3d8cad 5%, #60abf0 50%, #b3bcc0 100%);
+  background: linear-gradient(120deg, #3d8cad 0%, #60abf0 50%, #b3bcc0 100%);
   background-blend-mode: hue, color, overlay, screen;
 
   &::before {
