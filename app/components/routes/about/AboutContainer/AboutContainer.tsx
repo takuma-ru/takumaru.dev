@@ -5,6 +5,18 @@ import { CommonLayout } from "~/components/layouts/CommonLayout/CommonLayout";
 import { Section } from "~/components/routes/about/Section/Section";
 import styles from "./AboutContainer.module.scss";
 
+const SECTION_CONTENTS = [
+  {
+    title: "Hi! I am **takumaru**",
+    content: "I am a **Japanese** who loves 🐈 and programming.",
+  },
+  {
+    title: "My occupation is **Front-end engineer** .",
+    content:
+      "I specialize in front-end development of web applications. \n I am very interested in developing front-end OSS such as Vue.js and unjs. I also develop some OSS on my own.",
+  },
+] as const;
+
 export const AboutContainer: FC = () => {
   return (
     <CommonLayout>
@@ -13,20 +25,9 @@ export const AboutContainer: FC = () => {
           <h1>How is ME ?</h1>
           <Divider />
         </div>
-        <Section
-          titleNode={
-            <>
-              Hi! I am <strong>takumaru</strong>
-            </>
-          }
-        >
-          I am a Japanese who loves cat🐈 and programming.I am currently a
-          student, but I have decided to work as a web engineer.My hobbies are
-          varied, but I especially enjoy things related to cats, games, and
-          searching for artists.I also like to create things, so I became a web
-          engineer because I can create various tangible things with a single
-          PC.Best regards.
-        </Section>
+        {SECTION_CONTENTS.map(({ title, content }) => (
+          <Section key={title} title={title} content={content} />
+        ))}
       </main>
     </CommonLayout>
   );

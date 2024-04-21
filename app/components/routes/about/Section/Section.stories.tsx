@@ -6,8 +6,8 @@ const meta: Meta<typeof Section> = {
   title: "components/Section",
   component: Section,
   tags: ["autodocs"],
-  args: { titleNode: undefined, children: undefined },
-  argTypes: {},
+  args: { title: undefined, content: undefined },
+  argTypes: { title: { control: "text" }, content: { control: "text" } },
 };
 
 export default meta;
