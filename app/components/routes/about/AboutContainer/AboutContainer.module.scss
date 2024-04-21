@@ -1,3 +1,17 @@
 .about-container-component {
-  // Your styles here
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+  min-height: 100%;
+  padding: 160px;
+
+  > .title {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: Chillax, sans-serif;
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
 }
