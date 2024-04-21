@@ -43,7 +43,7 @@ export const useBreakpoint = (): useBreakpointReturnType => {
 	const isTab = useMediaQuery(BREAKPOINT.TAB);
 	const isPc = useMediaQuery(BREAKPOINT.PC);
 
-	const displayType = isSp ? "sp" : isTab ? "tab" : "pc";
+	const displayType = isPc ? "pc" : isTab ? "tab" : "sp";
 
 	return { isSp, isTab, isPc, displayType };
 };

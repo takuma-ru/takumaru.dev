@@ -4,9 +4,9 @@
 .header-component {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: start;
   height: 80px;
-  padding: 0 80px;
+  padding: 0 24px;
   color: var.$text-primary;
 
   > .navigation {
@@ -24,5 +24,12 @@
         font-weight: 600;
       }
     }
+  }
+}
+
+@include mixin.responsive(pc) {
+  .header-component {
+    justify-content: end;
+    padding: 0 80px;
   }
 }

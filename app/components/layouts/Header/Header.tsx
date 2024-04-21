@@ -3,6 +3,7 @@ import { type FC, Fragment } from "react";
 import { NavLink } from "@remix-run/react";
 import { Divider } from "~/components/common/Divider/Divider";
 import { useBreakpoint } from "~/hooks/utils/useBreakpoint";
+import MenuRounded from "~icons/material-symbols-light/menu-rounded";
 import styles from "./Header.module.scss";
 
 const NAVIGATION = [
@@ -29,6 +30,7 @@ export const Header: FC = () => {
 
   return (
     <header className={styles["header-component"]}>
+      {isSp && <MenuRounded fontSize="24px" />}
       {!isSp && (
         <div className={styles.navigation}>
           {NAVIGATION.map((nav, index) => (
