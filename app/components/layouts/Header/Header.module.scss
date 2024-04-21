@@ -2,6 +2,27 @@
 @use "app/assets/styles/mixins.scss" as mixin;
 
 .header-component {
+  display: flex;
+  align-items: center;
+  justify-content: end;
   height: 80px;
+  padding: 0 80px;
   color: var.$text-primary;
+
+  > .navigation {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    height: 24px;
+    font-family: Chillax, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    transition: font-weight 0.3s ease-in-out;
+
+    > .link {
+      &:hover {
+        font-weight: 600;
+      }
+    }
+  }
 }

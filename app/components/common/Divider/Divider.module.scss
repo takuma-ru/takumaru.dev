@@ -1,0 +1,15 @@
+@use "app/assets/styles/variables.scss" as var;
+
+.divider-component {
+  display: inline;
+  border: none;
+  border-left: 1px solid var.$text-primary;
+
+  &.-vertical {
+    height: 100%;
+  }
+
+  &.-horizontal {
+    width: 100%;
+  }
+}

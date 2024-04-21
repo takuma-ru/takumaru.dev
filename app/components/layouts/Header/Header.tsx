@@ -1,13 +1,41 @@
-import type { FC } from "react";
+import { type FC, Fragment } from "react";
 
+import { NavLink } from "@remix-run/react";
+import { Divider } from "~/components/common/Divider/Divider";
 import styles from "./Header.module.scss";
 
-type Props = {};
+const NAVIGATION = [
+  {
+    label: "TOP",
+    path: "/",
+  },
+  {
+    label: "How?",
+    path: "/about",
+  },
+  {
+    label: "Works",
+    path: "/works",
+  },
+  {
+    label: "Contact",
+    path: "/contact",
+  },
+] as const satisfies Array<{ label: string; path: `/${string}` }>;
 
-export const Header: FC<Props> = ({}) => {
+export const Header: FC = () => {
   return (
     <header className={styles["header-component"]}>
-      <h1 className={styles["header-title"]}>Header</h1>
+      <div className={styles.navigation}>
+        {NAVIGATION.map((nav, index) => (
+          <Fragment key={nav.path}>
+            <NavLink to={nav.path} className={styles.link}>
+              {nav.label}
+            </NavLink>
+            {NAVIGATION.length > index + 1 && <Divider direction="vertical" />}
+          </Fragment>
+        ))}
+      </div>
     </header>
   );
 };
