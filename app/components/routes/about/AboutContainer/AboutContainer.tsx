@@ -15,7 +15,12 @@ const SECTION_CONTENTS = [
     content:
       "I specialize in front-end development of web applications. \n I am very interested in developing front-end OSS such as Vue.js and unjs. I also develop some OSS on my own.",
   },
-] as const;
+  {
+    title: "I have skills in **Web development** and **Design** and ...",
+    content:
+      "We have been exposed to a variety of languages and frameworks in addition to web front-end. \n I have a basic understanding of how to handle the following technologies",
+  },
+] as const satisfies Array<{ title: string; content: string }>;
 
 export const AboutContainer: FC = () => {
   return (

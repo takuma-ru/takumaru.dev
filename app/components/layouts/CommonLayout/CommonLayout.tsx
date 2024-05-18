@@ -1,5 +1,6 @@
 import type { FC, PropsWithChildren } from "react";
 
+import { Footer } from "~/components/layouts/Footer/Footer";
 import { Header } from "~/components/layouts/Header/Header";
 import styles from "./CommonLayout.module.scss";
 
@@ -17,7 +18,7 @@ export const CommonLayout: FC<Props> = ({
     <div className={styles["common-layout-component"]}>
       {isHeader && <Header />}
       <main>{children}</main>
-      {isFooter && <footer>Footer</footer>}
+      {isFooter && <Footer />}
     </div>
   );
 };
