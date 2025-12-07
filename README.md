@@ -1,3 +1,1 @@
 # takumaru.dev
-
-takumaru.dev
